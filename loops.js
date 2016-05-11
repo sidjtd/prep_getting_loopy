@@ -18,7 +18,7 @@ var dudes  =["-Duke", "-Keoki", "-Ikaika", "-Kelani", "-Limu"];
 
 function printContent(lister){
 	for (var i = 0; i<lister.length; i++){
-		console.log("No: " + i + " " + lister[i]);
+		//console.log("No: " + i + " " + lister[i]);
 		//console.log(lister[i]);
 	}
 }
@@ -28,25 +28,28 @@ printContent(prez);
 /*
 The String of Numbers
 Declare a variable named stringOfNumbers and set it's value to '' (an empty String).
-Then write a FOR loop that appends a Number value to that string starting from 10 all the way up to and including 20.
-After the FOR loop, use console.log to inspect your variable. In the end your String should look like this 1011121314151617181920
-bonus: could you take the code inside of this FOR loop and encapsulate it inside of a function called appendToString and still achieve the same result?
+Then write a FOR loop that appends a Number value to that string starting from 10 all the way up 
+to and including 20.
+
+After the FOR loop, use console.log to inspect your variable. In the end your String should look 
+like this 1011121314151617181920
+
+bonus: could you take the code inside of this FOR loop and encapsulate it inside of a function 
+called appendToString and still achieve the same result?
 */
 var stringOfNumbers='';
-var previousi;
 
-	for (var i =0; i<stringOfNumbers; i++){
-
-		if(i<21){
+function appendToString(LAGABALOO,FAGABALOO){
+	for (var i =LAGABALOO; i<=FAGABALOO; i++){
+		//if(i>9){
 			stringOfNumbers+=i;
-			//console.log(stringOfNumbers);
-
 		}
+		console.log(stringOfNumbers);
+}
+appendToString(10,25);
 
-		else {
-
-		}
-	}
+		/*}   else {}
+}
 //console.log(stringOfNumbers);
 /*
 
